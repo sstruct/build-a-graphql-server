@@ -24,3 +24,19 @@ l
 #   Auto Complete:  Ctrl-Space (or just start typing)
 #
 ```
+
+## 06 Write a GraphQL Schema in JavaScript
+
+remove the rootValue❓
+
+GraphQLSchema 内部究竟发生了什么呢？
+
+```js
+server.use(
+  "/graphql",
+  graphqlHTTP({
+    schema,
+    graphiql: true
+  })
+);
+```
