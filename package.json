@@ -5,7 +5,13 @@
   "repository": "git@github.com:sstruct/build-a-graphql-server.git",
   "author": "sstruct <yangzi@caicloud.io>",
   "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
   "dependencies": {
-    "graphql": "^0.13.1"
+    "express": "^4.16.2",
+    "express-graphql": "^0.6.12",
+    "graphql": "^0.13.1",
+    "nodemon": "^1.17.1"
   }
 }
