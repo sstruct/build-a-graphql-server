@@ -1,0 +1,11 @@
+{
+  "name": "build-a-graphql-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:sstruct/build-a-graphql-server.git",
+  "author": "sstruct <yangzi@caicloud.io>",
+  "license": "MIT",
+  "dependencies": {
+    "graphql": "^0.13.1"
+  }
+}

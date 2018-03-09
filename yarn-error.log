@@ -1,0 +1,35 @@
+Arguments: 
+  /Users/yangzi/.nvm/versions/node/v8.9.4/bin/node /usr/local/Cellar/yarn/1.5.1/libexec/bin/yarn.js add grapqql
+
+PATH: 
+  /usr/local/sbin:/Users/yangzi/.nvm/versions/node/v8.9.4/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/.nvm/versions/node/v6.9.4/bin/:/usr/local/aria2/bin:/usr/local/go/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Library/TeX/texbin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.9.4
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "build-a-graphql-server",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "git@github.com:sstruct/build-a-graphql-server.git",
+    "author": "sstruct <yangzi@caicloud.io>",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND npm.caicloud.xyz npm.caicloud.xyz:80
+      at errnoException (dns.js:50:10)
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:92:26)
