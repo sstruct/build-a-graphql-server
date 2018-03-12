@@ -13,7 +13,9 @@ const {
   GraphQLInt,
   GraphQLString
 } = require("graphql");
+
 const { getVideoById, getVideos, createVideo } = require("./src/data");
+const nodeInterface = require("./src/node");
 
 const PORT = process.env.PORT || 3000;
 const server = express();
@@ -44,6 +46,10 @@ const videoType = new GraphQLObjectType({
 const videoInputType = new GraphQLInputObjectType({
   name: "VideoInput",
   fields: {
+    id: {
+      type: new GraphQLNonNull(GraphQLID),
+      description: "The id of the video."
+    },
     title: {
       type: new GraphQLNonNull(GraphQLString),
       description: "The title of the video."
@@ -56,8 +62,11 @@ const videoInputType = new GraphQLInputObjectType({
       type: new GraphQLNonNull(GraphQLBoolean),
       description: "Whether or not the video is released."
     }
-  }
+  },
+  interfaces: [nodeInterface]
 });
+
+module.exports = videoInputType;
 
 const mutationType = new GraphQLObjectType({
   name: "MutationType",
